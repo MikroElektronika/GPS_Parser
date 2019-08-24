@@ -1247,7 +1247,7 @@ static void get_location( char *str, location_t *location, int type )
 
         location->degrees = get_num( tmp );
         strcpy( tmp, p_tmp );
-        location->minutes = get_num( tmp );
+        location->minutes = get_num_float( tmp );
     }
 
     return;
